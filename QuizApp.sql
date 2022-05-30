@@ -1,3 +1,5 @@
+CREATE DATABASE `QuizDB`;
+
 use `QuizDB`;
 
 CREATE TABLE `Quiz` (
