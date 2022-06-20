@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="comboStud" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AdminStudInfoController">
+   <children>
+      <VBox layoutX="372.0" layoutY="514.0" prefHeight="242.0" prefWidth="169.0" spacing="10.0" AnchorPane.leftAnchor="372.0" AnchorPane.rightAnchor="202.0" />
+      <TextField fx:id="SearchTF" layoutX="10.0" layoutY="325.0" prefHeight="38.0" prefWidth="548.0" promptText=" Search by Student_ID" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="185.0" />
+      <Button fx:id="SearchBTN" layoutX="633.0" layoutY="480.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #A5BECC;" text="Search" AnchorPane.bottomAnchor="47.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="WrittenTF" layoutX="19.0" layoutY="130.0" prefHeight="30.0" prefWidth="201.0" promptText="Enter Student_ID" AnchorPane.leftAnchor="19.0" />
+      <Button fx:id="BackBTN" layoutX="8.0" layoutY="373.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-background-color: black;" text="&lt;" textFill="WHITE" AnchorPane.bottomAnchor="7.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="CancelBTN" layoutX="409.0" layoutY="374.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" style="-fx-background-color: black;" text="Cancel" textFill="WHITE" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="16.0" />
+      <TableView fx:id="studTable" layoutX="279.0" layoutY="61.0" prefHeight="409.0" prefWidth="489.0">
+        <columns>
+          <TableColumn fx:id="IDColumn" prefWidth="105.0" text="Teacher ID" />
+            <TableColumn fx:id="fNameColumn" prefWidth="125.0" text="FirstName" />
+            <TableColumn fx:id="lNameColumn" minWidth="0.0" prefWidth="132.0" text="LastName" />
+            <TableColumn fx:id="deptColumn" prefWidth="125.0" text="Department" />
+        </columns>
+      </TableView>
+      <TextField fx:id="WrittenTFLN" layoutX="19.0" layoutY="280.0" prefHeight="30.0" prefWidth="201.0" promptText="Enter Last Name" />
+      <TextField fx:id="WrittenTFFN" layoutX="19.0" layoutY="205.0" prefHeight="30.0" prefWidth="201.0" promptText="Enter First Name" />
+      <TextField fx:id="WrittenTF111" layoutX="20.0" layoutY="350.0" prefHeight="30.0" prefWidth="201.0" promptText="Department" />
+      <Label layoutX="19.0" layoutY="105.0" prefHeight="17.0" prefWidth="29.0" text="Id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="19.0" layoutY="174.0" prefHeight="19.0" prefWidth="72.0" text="First Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="19.0" layoutY="249.0" prefHeight="20.0" prefWidth="72.0" text="Last Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="19.0" layoutY="319.0" prefHeight="20.0" prefWidth="82.0" text="Department">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="AddBTN" layoutX="10.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleOnAction" prefHeight="38.0" prefWidth="72.0" style="-fx-background-color: #A5BECC;" text="Add">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="EditBTN" layoutX="93.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleOnAction" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: A5BECC;" text="Update">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteBTN" layoutX="196.0" layoutY="488.0" mnemonicParsing="false" onAction="#handleOnAction" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #A5BECC;" text="Delete">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

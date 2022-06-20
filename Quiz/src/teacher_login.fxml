@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="teacherloginpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAF0D7;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TeacherLoginController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="176.0" style="-fx-background-color: #0b2b4d;" AnchorPane.bottomAnchor="0.0" />
+      <Label layoutX="230.0" layoutY="211.0" text="Password:" textFill="#5e90c9">
+         <font>
+            <Font name="Franklin Gothic Demi" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TFteachersignupfirstname" layoutX="310.0" layoutY="169.0" onAction="#TFteachersignupfirstnameonaction" prefHeight="26.0" prefWidth="187.0" promptText="enter username here..." style="-fx-background-color: #ebdbe2;" />
+      <PasswordField fx:id="TFteacherloginpasswd" layoutX="310.0" layoutY="207.0" onAction="#PFteacherloginpasswd" prefHeight="26.0" prefWidth="187.0" promptText="enter password here..." style="-fx-background-color: #ebdbe2;" />
+      <Label layoutX="228.0" layoutY="173.0" text="Username:" textFill="#5e90c9">
+         <font>
+            <Font name="Franklin Gothic Demi" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnteacherloginlogin" layoutX="230.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnteacherloginloginonaction" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #0b2b4d;" text="LOGIN" />
+      <Button fx:id="btnteacherloginback" layoutX="429.0" layoutY="283.0" mnemonicParsing="false" onAction="#btnteacherloginbackonaction" prefHeight="30.0" prefWidth="68.0" style="-fx-background-color: #0b2b4d;" text="BACK" />
+      <ImageView fitHeight="137.0" fitWidth="130.0" layoutX="339.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Downloads/teacher-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

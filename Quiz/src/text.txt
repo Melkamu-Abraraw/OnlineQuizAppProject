@@ -1,0 +1,51 @@
+// String ID;
+// ID=WrittenTF.getText();
+
+//             DatabaseConnection c = new DatabaseConnection();
+//             Connection con = c.getconnection();
+    
+//         String sql = ("insert into Student(StudId) values(?)");
+//         try {
+//             PreparedStatement st = con.prepareStatement(sql);
+//             st.setString(1,ID);
+//             st.executeUpdate();
+//             Alert alret=new Alert(AlertType.INFORMATION);
+//             alret.setTitle("Online Quiz App");
+//             alret.setHeaderText("Student Information");
+//             alret.setContentText("Record Added!!");
+//             alret.showAndWait();
+//         } catch (Exception e) {
+//             System.out.println(e);
+//         }
+//     }
+//     public void table(){
+//         DatabaseConnection c = new DatabaseConnection();
+//             Connection con = c.getconnection();
+//         final ObservableList<student> studentList =FXCollections.observableArrayList();
+// try {
+//     PreparedStatement st = con.prepareStatement("select StudId from Student");
+//     ResultSet rs=st.executeQuery();{
+//         while(rs.next()){
+//             student stud=new student();
+//             stud.setID(rs.getString("ID"));
+//             studentList.add(stud);
+//         }
+//     }
+//     //private TableView<student> 
+//     studTable.setItems(studentList);
+
+// IDColumn.setCellValueFactory(f->f.getValue().IDProperty());
+// } catch (SQLException e) {
+//    e.printStackTrace();
+//     //Logger.getLogger(AdminStudInfoController.class.getName()).log(Level.SEVERE,null,e);
+// }
+//    studTable.setRowFactory(tv->{TableRow<student> myRow=new TableRow<>();
+//     myRow.setOnMouseClicked(event ->{
+
+//         if(event.getClickCount()==1&&(!myRow.isEmpty())){
+//             index=studTable.getSelectionModel().getSelectedIndex();
+//              WrittenTF.setText(studTable.getItems().get(index).getID());
+//         }
+//     });
+//     return myRow;
+//    });

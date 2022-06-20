@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="607.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentLOginController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="240.0" layoutY="41.0" nodeOrientation="INHERIT" pickOnBounds="true">
+         <image>
+            <Image url="@Images/student.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="usernameTextField" layoutX="204.0" layoutY="226.0" prefHeight="32.0" prefWidth="293.0" promptText="Username" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="110.0">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordPassField" layoutX="204.0" layoutY="274.0" prefHeight="32.0" prefWidth="293.0" promptText="Password" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="110.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </PasswordField>
+      <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="170.0" layoutY="228.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/R.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="30.0" layoutX="170.0" layoutY="273.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/locked.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="remeRadioBtn" layoutX="204.0" layoutY="325.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="125.0" text="ShowPassword" AnchorPane.leftAnchor="204.0" AnchorPane.rightAnchor="278.0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="204.0" layoutY="411.0" prefHeight="17.0" prefWidth="135.0" text="Don't have an account?">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="clickhereButton" layoutX="340.0" layoutY="406.0" mnemonicParsing="false" onAction="#clickHereAction" prefHeight="27.0" prefWidth="112.0" text="Click here" textFill="#3bacb6">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginButton" layoutX="204.0" layoutY="363.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="25.0" prefWidth="112.0" text="Login" textFill="#2f8f9d">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Accordion />
+      <Label fx:id="labelId" layoutX="193.0" layoutY="441.0" prefHeight="17.0" prefWidth="293.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
